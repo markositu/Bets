@@ -1,0 +1,32 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-10-05 16:19:11 #1 store] 
+Database 'C:\Users\Usuario\git\3aIteracion\BetsIt0\resources\bets.temp' is opened by 14096@PC-Pablo
+
+[2020-10-05 16:19:11 #2 type] 
+Type domain.User is not enhanced.
+
+[2020-10-05 16:19:11 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-10-05 16:19:11 #4 type] 
+Type domain.Event is not enhanced.
+
+[2020-10-05 16:19:11 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-10-05 16:19:11 #6 type] 
+Type domain.Pronostico is not enhanced.
+
+[2020-10-05 16:19:11 #7 type] 
+Type domain.Quiniela is not enhanced.
+
+[2020-10-05 16:19:11 #8 type] 
+Type domain.QuinielaResuelta is not enhanced.
+
+[2020-10-05 16:19:11 #9 type] 
+Type domain.Apuesta is not enhanced.
+
+[2020-10-05 16:19:11 #10 type] 
+Type domain.ApuestaCombinada is not enhanced.
+

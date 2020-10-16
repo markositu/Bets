@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><config>
+  <businessLogic local="true"> 
+	<businessLogicNode>0.0.0.0</businessLogicNode>
+	<businessLogicPort>1099</businessLogicPort>
+	<businessLogicName>Bets</businessLogicName>
+  </businessLogic>
+  <database local="true">
+	<databaseNode>0.0.0.0</databaseNode>
+	<dbFilename>resources/bets.temp</dbFilename>
+	<dataBaseOpenMode>initialize</dataBaseOpenMode>
+	<databasePort>6136</databasePort>
+	<user>admin</user>
+	<password>admin</password>
+	<questionn>11</questionn>
+	<eventn>60</eventn>
+	<apostarn>169</apostarn>
+	<apuestaCn>200</apuestaCn>
+	<quinielan>6</quinielan>
+	<quirelln>10</quirelln>
+  </database>
+
+  <locale>en</locale>
+</config>

@@ -1,0 +1,91 @@
+package businessLogic;
+
+import java.util.Vector;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+//import domain.Booking;
+import domain.Question;
+import domain.Quiniela;
+import domain.User;
+import domain.Admin;
+import domain.Apuesta;
+import domain.ApuestaCombinada;
+import domain.Event;
+import domain.Pronostico;
+import exceptions.EventFinished;
+import exceptions.QuestionAlreadyExist;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+/***
+ * Interface that specifies the business logic.
+ */
+@WebService
+public interface BLFacade  {
+	
+
+	/**
+	 * This method creates a question for an event, with a question text and the minimum bet
+	 * 
+	 * @param event to which question is added
+	 * @param question text of the question
+	 * @param betMinimum minimum quantity of the bet
+	 * @return the created question, or null, or an exception
+	 * @throws EventFinished if current data is after data of the event
+ 	 * @throws QuestionAlreadyExist if the same question already exists for the event
+	 */
+	@WebMethod Question createQuestion(Event event, String question, float betMinimum) throws EventFinished, QuestionAlreadyExist;
+	
+	
+	/**
+	 * This method retrieves the events of a given date 
+	 * 
+	 * @param date in which events are retrieved
+	 * @return collection of events
+	 */
+	@WebMethod public Vector<Event> getEvents(Date date);
+	@WebMethod public User addDinero(String id,float dinero);
+	
+	/**
+	 * This method retrieves from the database the dates a month for which there are events
+	 * 
+	 * @param date of the month for which days with events want to be retrieved 
+	 * @return collection of dates
+	 */
+	 @WebMethod public void updateQuestion(Question q);
+	@WebMethod public Vector<Date> getEventsMonth(Date date);
+	
+	/**
+	 * This method calls the data access to initialize the database with some events and questions.
+	 * It is invoked only when the option "initialize" is declared in the tag dataBaseOpenMode of resources/config.xml file
+	 */	
+	@WebMethod public void initializeBD();
+
+
+	@WebMethod public void createEvent(Date selecteddate, String description);
+	
+	@WebMethod public Vector<Event> getAllEvents();
+	@WebMethod public void registrarUsuario(String id,String contrasena);
+	@WebMethod public void registrarAdmin(String id,String contrasena);
+	@WebMethod public User conseguirUser(User u);
+	@WebMethod public User getUserById(String id);
+	@WebMethod public Admin getAdminById(String id);
+
+
+	@WebMethod boolean compararContrasenasU(String id,String contrasena);
+
+
+	@WebMethod boolean compararContrasenasA(String id,String contrasena);
+	@WebMethod public boolean existeUsuario(String id);
+	@WebMethod public boolean existeAdmin(String id);
+	@WebMethod public Question createQuestionQ(Question q);
+	@WebMethod public Apuesta crearApuesta(User u, Question q, int p, float c, Event e);
+	@WebMethod public ApuestaCombinada meterApuestaCombinada (User u, ArrayList <Apuesta> listaApTemp) ;
+	@WebMethod public Quiniela meterQuiniela (ArrayList <Event> listaeventos);
+	@WebMethod public List<Quiniela> sacarQuinielas ();
+	@WebMethod public void guardarQuiniela(User u, Quiniela q, int[] res);
+	@WebMethod public void subirResultadoQuiniela(Quiniela quinielaActual,int []resultadoQuiniela);
+}
