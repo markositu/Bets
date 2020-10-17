@@ -1,7 +1,7 @@
 addons:
  sonarcloud:
  organization: marcos
- token: 9489d1444c981144aa5b662d0ac7519be6ea2d93
+ 
 script:
  # the following command line builds the project, runs the tests with
 coverage
