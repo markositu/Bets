@@ -1,0 +1,10 @@
+addons:
+ sonarcloud:
+ organization: marcos
+ token: 9489d1444c981144aa5b662d0ac7519be6ea2d93
+script:
+ # the following command line builds the project, runs the tests with
+coverage
+ # and then execute the SonarCloud analysis
+ - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install
+org.jacoco:jacoco-maven-plugin:report install sonar:sonar
