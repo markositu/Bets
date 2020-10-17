@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId> Bets_2021 </groupId>
-	<artifactId> THE_PROJECT_NAME_IN_SONARCLOUD </artifactId>
+	<artifactId> BetsIt0</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<repositories>
@@ -85,7 +85,7 @@
   		<sonar.projectKey>Bets2020</sonar.projectKey>
  		<sonar.organization>marcos</sonar.organization>
  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.login> 573dfefea1bba788121f18403a26c49ed5532e34 </sonar.login>
+		<sonar.login> 9489d1444c981144aa5b662d0ac7519be6ea2d93 </sonar.login>
 	</properties>
 
 	<!-- https://mvnrepository.com/artifact/junit/junit -->
