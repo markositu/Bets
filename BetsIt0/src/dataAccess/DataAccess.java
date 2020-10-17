@@ -449,20 +449,7 @@ public class DataAccess  {
 		return ac;
 	}
 	
-	/*public void subirResultado(int nPronostico,int q) {
-		//db.getTransaction().begin();
-		TypedQuery<Apuesta> query = db.createQuery("SELECT  a FROM Apuesta a WHERE a.nPronostico = ?1 AND a.nQuestion=?2",Apuesta.class);   
-		query.setParameter(1, nPronostico); //id
-		query.setParameter(2, q);
-		float multi =0;
-		List<Apuesta> ap = query.getResultList();
-		for(Apuesta a:ap) {
-			Question pregunta=a.getQuestion();
-			Pronostico ps= pregunta.getPronosticos().get(nPronostico);
-			multi=ps.getMultiplicador();      			
-			meterDinero(a.getUser().getId(), multi*a.getCantidadapostada());			
-		}
-	*/	
+
 		
 		public void subirResultado(int nPronostico,int q) {
 			//db.getTransaction().begin();
