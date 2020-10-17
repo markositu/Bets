@@ -80,7 +80,7 @@ public interface BLFacade  {
 
 	@WebMethod boolean compararContrasenasA(String id,String contrasena);
 	@WebMethod public boolean existeUsuario(String id);
-	@WebMethod public boolean existeAdmin(String id);
+	@WebMethod public boolean existeAdmi(String id);
 	@WebMethod public Question createQuestionQ(Question q);
 	@WebMethod public Apuesta crearApuesta(User u, Question q, int p, float c, Event e);
 	@WebMethod public ApuestaCombinada meterApuestaCombinada (User u, ArrayList <Apuesta> listaApTemp) ;

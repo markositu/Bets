@@ -1,4 +1,6 @@
 package test;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 /**
  * FacadeMockTest: Some JUnit+Mock example for FacadeMock
  */
@@ -43,7 +45,44 @@ class FacadeMockTest {
 	public void setUp() {
 		MockitoAnnotations.initMocks(this);
 	}
+	@Test
+	@DisplayName("Existe Admin")
+	void existeadmin() {
 
+		
+			
+
+			// configure Mock
+			Mockito.doReturn(true).when(dataAccess).existeAdmin(Mockito.any(String.class));
+
+			ArgumentCaptor<String> idStringCaptor = ArgumentCaptor.forClass(String.class);
+
+			// invoke System Under Test (sut)
+			assertTrue(sut.existeAdmi("ad"));
+			
+			Mockito.verify(dataAccess, Mockito.times(1)).existeAdmin(idStringCaptor.capture());
+			 assertEquals(idStringCaptor.getValue(),"ad");
+			 
+			
+		
+	}
+	@Test
+	@DisplayName("NO Existe Admin")
+	void noExisteadmin() {
+
+		
+			
+
+			// configure Mock
+			Mockito.doReturn(false).when(dataAccess).existeAdmin(Mockito.any(String.class));
+			
+
+			// invoke System Under Test (sut)
+			assertFalse(sut.existeAdmi("admin"));
+
+		
+	}
+	
 	@SuppressWarnings("unchecked")
 	@Test
 	@DisplayName("The event has one question with a queryText")

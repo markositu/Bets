@@ -135,7 +135,7 @@ public class RegisterGUI extends JFrame {
 						System.out.println(pass);
 						System.out.println(textUsuario.getText());
 						System.out.println(bl);
-						if(bl.existeAdmin(textUsuario.getText())) {
+						if(bl.existeAdmi(textUsuario.getText())) {
 							errorText.setText("Ya existe ese admin");
 						}
 						else {
