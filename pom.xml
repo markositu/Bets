@@ -54,7 +54,7 @@
   		<sonar.projectKey>Bets2020</sonar.projectKey>
  		<sonar.organization>marcos</sonar.organization>
  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.login> aaa15e229b0a69fa1fbc64c24e68d22227c13e7f </sonar.login>
+		<sonar.login> db974cd0a2e38f6723125bde6a75a6f8b55fb054 </sonar.login>
 	</properties>
 
 	<!-- https://mvnrepository.com/artifact/junit/junit -->
