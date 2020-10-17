@@ -351,7 +351,7 @@ public class DataAccess  {
 	public User getUserById(String id) {
 		db.getTransaction().begin();
 		User u=db.find(User.class, id);
-		//db.getTransaction().commit();
+		
 		System.out.println(u.getContrasena());
 		return u;
 	}
