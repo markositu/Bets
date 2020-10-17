@@ -262,21 +262,7 @@ public class DataAccess  {
 	 * @param date in which events are retrieved
 	 * @return collection of events
 	 */
-	/*
-	public Vector<Event> getEvents(Date date) {
-		System.out.println(">> DataAccess: getEvents");
-		Vector<Event> res = new Vector<Event>();	
-		TypedQuery<Event> query = db.createQuery("SELECT ev FROM Event ev WHERE ev.eventDate=?1",Event.class);   
-		query.setParameter(1, date);
-		List<Event> events = query.getResultList();
-		System.out.println("aaaaaaaaaaaaaa");
-	 	 for (Event ev:events){
-	 	   System.out.println(ev.toString());		 
-		   res.add(ev);
-		  }
-	 	return res;
-	}
-	*/
+	
 	@SuppressWarnings("deprecation")
 	public Vector<Event> getEvents(Date date) {
 		System.out.println(">> DataAccess: getEvents");
