@@ -437,7 +437,7 @@ public class DataAccess  {
 	
 
 		
-		public void subirResultado(int nPronostico,int q) {
+		public float subirResultado(int nPronostico,int q) {
 			//db.getTransaction().begin();
 			TypedQuery<ApuestaCombinada> query = db.createQuery("SELECT  a FROM ApuestaCombinada a",ApuestaCombinada.class);   
 			
@@ -455,11 +455,13 @@ public class DataAccess  {
 							db.getTransaction().commit();
 							if(ac.ganada()) {
 								meterDinero(ac.getUsuario().getId(), ac.gananciaPotencial());
+								return ac.gananciaPotencial();
 							}
 						}
 					}
 				}
 			}
+			return 0;
 					
 	}
 	public Quiniela meterQuiniela (ArrayList <Event> listaeventos) {

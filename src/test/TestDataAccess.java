@@ -12,7 +12,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import configuration.ConfigXML;
+import domain.Admin;
 import domain.Event;
+import domain.User;
 
 public class TestDataAccess {
 	protected  EntityManager  db;
@@ -80,6 +82,31 @@ public class TestDataAccess {
 					e.printStackTrace();
 				}
 				return ev;
+	    }
+		public Admin addAdmin(String name, String pass) {
+			System.out.println(">> DataAccessTest: addEvent");
+			Admin a=null;
+				db.getTransaction().begin();
+				try {
+				    a=new Admin(name,pass);
+					db.persist(a);
+					db.getTransaction().commit();
+				}
+				catch (Exception e){
+					e.printStackTrace();
+				}
+				return a;
+	    }
+		public boolean removeAdmin(Admin a) {
+			System.out.println(">> DataAccessTest: removeEvent");
+			Admin ad = db.find(Admin.class, a.getId());
+			if (ad!=null) {
+				db.getTransaction().begin();
+				db.remove(ad);
+				db.getTransaction().commit();
+				return true;
+			} else 
+			return false;
 	    }
 }
 

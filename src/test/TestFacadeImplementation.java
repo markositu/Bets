@@ -6,6 +6,7 @@ package test;
 import java.util.Date;
 
 import configuration.ConfigXML;
+import domain.Admin;
 import domain.Event;
 import test.TestDataAccess;
 
@@ -35,6 +36,21 @@ public class TestFacadeImplementation {
 			Event o=dbManagerTest.addEvent(desc,d);
 			dbManagerTest.close();
 			return o;
+
+		}
+		public boolean removeAdmin(Admin a) {
+			dbManagerTest.open();
+			boolean b=dbManagerTest.removeAdmin(a);
+			dbManagerTest.close();
+			return b;
+
+		}
+		
+		public Admin addAdmin(String name, String pass) {
+			dbManagerTest.open();
+			Admin a=dbManagerTest.addAdmin(name, pass);
+			dbManagerTest.close();
+			return a;
 
 		}
 

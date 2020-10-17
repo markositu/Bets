@@ -24,3 +24,145 @@ Type domain.Apuesta is not enhanced.
 [2020-10-17 02:40:44 #8 type] 
 Type domain.ApuestaCombinada is not enhanced.
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-10-17 17:01:56 #1 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' has been recovered (tr. 120-131)
+
+[2020-10-17 17:01:56 #2 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' is opened by 13504@LAPTOP-6EQNGL55
+
+[2020-10-17 17:01:56 #3 type] 
+Type domain.Event is not enhanced.
+
+[2020-10-17 17:01:56 #4 type] 
+Type domain.Question is not enhanced.
+
+[2020-10-17 17:01:56 #5 type] 
+Type domain.Pronostico is not enhanced.
+
+[2020-10-17 17:01:56 #6 type] 
+Type domain.User is not enhanced.
+
+[2020-10-17 17:01:56 #7 type] 
+Type domain.Apuesta is not enhanced.
+
+[2020-10-17 17:01:56 #8 type] 
+Type domain.ApuestaCombinada is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-10-17 17:17:55 #1 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' has been recovered (tr. 132-143)
+
+[2020-10-17 17:17:56 #2 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' is opened by 2608@LAPTOP-6EQNGL55
+
+[2020-10-17 17:17:56 #3 type] 
+Type domain.Event is not enhanced.
+
+[2020-10-17 17:17:56 #4 type] 
+Type domain.Question is not enhanced.
+
+[2020-10-17 17:17:56 #5 type] 
+Type domain.Pronostico is not enhanced.
+
+[2020-10-17 17:17:56 #6 type] 
+Type domain.User is not enhanced.
+
+[2020-10-17 17:17:56 #7 type] 
+Type domain.Apuesta is not enhanced.
+
+[2020-10-17 17:17:56 #8 type] 
+Type domain.ApuestaCombinada is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-10-17 18:55:15 #1 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' has been recovered (tr. 144-155)
+
+[2020-10-17 18:55:15 #2 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' is opened by 2348@LAPTOP-6EQNGL55
+
+[2020-10-17 18:55:16 #3 type] 
+Type domain.Event is not enhanced.
+
+[2020-10-17 18:55:16 #4 type] 
+Type domain.Question is not enhanced.
+
+[2020-10-17 18:55:16 #5 type] 
+Type domain.Pronostico is not enhanced.
+
+[2020-10-17 18:55:16 #6 type] 
+Type domain.User is not enhanced.
+
+[2020-10-17 18:55:16 #7 type] 
+Type domain.Apuesta is not enhanced.
+
+[2020-10-17 18:55:16 #8 type] 
+Type domain.ApuestaCombinada is not enhanced.
+
+[2020-10-17 18:55:16 #9 type.registry] 
+New type domain.Admin
+
+[2020-10-17 18:55:16 #10 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-10-17 18:56:44 #1 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' has been recovered (tr. 156-170)
+
+[2020-10-17 18:56:45 #2 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' is opened by 2824@LAPTOP-6EQNGL55
+
+[2020-10-17 18:56:45 #3 type] 
+Type domain.Event is not enhanced.
+
+[2020-10-17 18:56:45 #4 type] 
+Type domain.Question is not enhanced.
+
+[2020-10-17 18:56:45 #5 type] 
+Type domain.Pronostico is not enhanced.
+
+[2020-10-17 18:56:45 #6 type] 
+Type domain.User is not enhanced.
+
+[2020-10-17 18:56:45 #7 type] 
+Type domain.Apuesta is not enhanced.
+
+[2020-10-17 18:56:45 #8 type] 
+Type domain.ApuestaCombinada is not enhanced.
+
+[2020-10-17 18:56:45 #9 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-10-17 19:06:58 #1 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' has been recovered (tr. 171-184)
+
+[2020-10-17 19:06:58 #2 store] 
+Database 'C:\Users\Marcos\git\Bets()\resources\bets.temp' is opened by 7620@LAPTOP-6EQNGL55
+
+[2020-10-17 19:06:59 #3 type] 
+Type domain.Event is not enhanced.
+
+[2020-10-17 19:06:59 #4 type] 
+Type domain.Question is not enhanced.
+
+[2020-10-17 19:06:59 #5 type] 
+Type domain.Pronostico is not enhanced.
+
+[2020-10-17 19:06:59 #6 type] 
+Type domain.User is not enhanced.
+
+[2020-10-17 19:06:59 #7 type] 
+Type domain.Apuesta is not enhanced.
+
+[2020-10-17 19:06:59 #8 type] 
+Type domain.ApuestaCombinada is not enhanced.
+
+[2020-10-17 19:06:59 #9 type] 
+Type domain.Admin is not enhanced.
+
