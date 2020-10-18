@@ -3,11 +3,14 @@ package test;
  * DataAccessTest: Some JUnit example for DataAccess
  */
 
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,6 +22,7 @@ import org.junit.jupiter.api.Test;
 
 import configuration.ConfigXML;
 import dataAccess.DataAccess;
+import domain.Admin;
 import domain.Apuesta;
 import domain.ApuestaCombinada;
 import domain.Event;
@@ -37,7 +41,49 @@ class DataAccessTest {
 	private Float betMinimum = 2.0f;
 	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	private Event ev;
+	private Admin a;
 
+	@Test
+	@DisplayName("Existe Admin")
+	void existeAdmin() {
+
+		try {
+			
+			// configure the state of the system (create object in the dabatase)
+			a = testBL.addAdmin("Admin", "admin");
+			
+
+			// invoke System Under Test (sut)
+			assertTrue(sut.existeAdmin("Admin"));
+		} catch (Exception e) {
+			fail("Algo ha ido mal");
+		} finally {
+			// Remove the created objects in the database (cascade removing)
+			boolean b = testBL.removeAdmin(a);
+			assertTrue(b);
+		}
+
+	}
+	@Test
+	@DisplayName(" NoExiste Admin")
+	void noExisteAdmin() {
+
+		try {
+			
+			// configure the state of the system (create object in the dabatase)
+			
+			
+
+			// invoke System Under Test (sut)
+			assertFalse(sut.existeAdmin("Admin"));
+		} catch (Exception e) {
+			fail("Algo ha ido mal");
+		} finally {
+			// Remove the created objects in the database (cascade removing)
+			
+		}
+
+	}
 	@Test
 	@DisplayName("The event has one question with a queryText")
 	void createQuestionDATest1() {

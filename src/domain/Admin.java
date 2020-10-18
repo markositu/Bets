@@ -19,5 +19,8 @@ public class Admin {
 	public String getContrasena() {
 		return this.contrasena;
 	}
+	public String getId() {
+		return this.id;
+	}
 
 }

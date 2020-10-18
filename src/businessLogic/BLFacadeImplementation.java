@@ -111,9 +111,9 @@ public class BLFacadeImplementation  implements BLFacade {
 	   return res;
    }
    @WebMethod
-   public boolean existeAdmin(String id) {
+   public boolean existeAdmi(String id) {
 	   boolean res;
-	   DataAccess dbManager=new DataAccess(true);
+	    dbManager.open(false);
 	   res=dbManager.existeAdmin(id);
 	  dbManager.close();
 	   return res;
